@@ -1,28 +1,44 @@
 import { useState } from 'react'
 import map from './assets/Screenshot 2026-05-06 130623.png'
-import Menu from './Menu.jsx'
+
+import HomePage from './HomePage.jsx'
+import BusPage from './BusPage.jsx'
+import CyclePage from './CyclePage.jsx'
+import WalkingPage from './WalkingPage.jsx'
+import TrainPage from './Train.jsx'
+import CalPage from './CalPage.jsx'
+
 import './App.css'
 
 function App() {
   const [page, setPage] = useState("Home")
 
+
   
   return (
-    <body>
-      <div class = "sideMenu">
-      <button>Home</button>
+    <div className = "app">
+      <div className = "sideMenu">
+      <button onClick ={() => setPage("Home")}>Home</button>
 
-      <button>Cycle</button>
+      <button onClick ={() => setPage("Cycle")}>Cycle</button>
 
-      <button>Walking</button>
+      <button onClick ={() => setPage("Walking")}>Walking</button>
 
-      <button>Bus</button>
+      <button onClick ={() => setPage("Bus")}>Bus</button>
 
-      <button>train</button>
+      <button onClick ={() => setPage("Train")}>Train</button>
 
-      <button>Calculate</button>
+      <button onClick ={() => setPage("Calc")}>Calculate</button>
       </div>
-    </body>
+  
+      {page === "Home" && <HomePage />}
+      {page === "Cycle" && <CyclePage />}
+      {page === "Walking" && <WalkingPage />}
+      {page === "Bus" && <BusPage />}
+      {page === "Train" && <TrainPage />}
+      {page === "Calc" && <CalPage />}
+
+    </div>
   );
 }
 
