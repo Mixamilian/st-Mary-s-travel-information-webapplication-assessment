@@ -25,7 +25,93 @@ body{
   padding: 20px;
 }
 
-button {
+.fare{
+  flex: 1;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fare label{
+  font-size: 25px;
+  margin: 29.35px;
+}
+
+.fare select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 170px;
+  height: 50px;
+  margin: 15px 5px;
+  padding: 0px 24px;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+.fare input{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 170px;
+  height: 50px;
+  margin: 15px 5px;
+  padding: 0px 24px;
+  font-size: 20px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  -ms-word-break: normal;
+  word-break: normal;
+}
+
+.fare button {
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 5px;
+  padding: 0px 24px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow,transform;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.fare button:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.fare button:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+
+.output{
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  font-size: 25px;
+  margin:29.35px;
+}
+
+.sideMenu button {
   display: flex;
   flex-direction: column;
   padding: 17px 40px;
@@ -40,14 +126,14 @@ button {
   transition: all 0.5s ease;
 }
 
-button:hover {
+.sideMenu button:hover {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
   box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
 }
 
-button:active {
+.sideMenu button:active {
   letter-spacing: 3px;
   background-color: hsl(261deg 80% 48%);
   color: hsl(0, 0%, 100%);
