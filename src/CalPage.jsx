@@ -9,7 +9,8 @@ function CalPage(){
 
     const calFare = () => {
 
-        const out = Number(distance) * Number(option);
+        const est = Number(distance) * Number(option);
+        const out = est.toFixed(2);
         setCost(out);
     }
     
@@ -22,8 +23,8 @@ function CalPage(){
             <label for = "travelType">Select a travel Type--</label>
             <select value={option} onChange={(e) => setTravel(e.target.value)}>
                 <option value = "0" selected >Select Box</option>
-                <option value = "3">Train</option>
-                <option value = "2">Bus</option>
+                <option value = "0.3">Train</option>
+                <option value = "0.08">Bus</option>
             </select>
             <label>Enter distance in km--</label>
             <input type = "number" value = {distance} onChange = {(e) => setDistance(e.target.value)}></input>
