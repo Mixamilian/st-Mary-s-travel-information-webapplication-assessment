@@ -11,9 +11,6 @@ function CalPage(){
 
         const out = Number(distance) * Number(option);
         setCost(out);
-
-        
-
     }
     
     return(
@@ -33,7 +30,7 @@ function CalPage(){
             <button onClick = {calFare}>Submit</button>
            </forum>
            <div className = "output">
-                <p>Cost of Fare is £{cost}</p>
+                <p>Fare Estimation is £{cost}</p>
            </div>
         </div>
     )
