@@ -22,13 +22,13 @@ function App() {
 
       <button onClick ={() => setPage("Cycle")}>Cycle</button>
 
-      <button onClick ={() => setPage("Walking")}>Walking</button>
+      <button onClick ={() => setPage("Walking")}>Foot</button>
 
       <button onClick ={() => setPage("Bus")}>Bus</button>
 
       <button onClick ={() => setPage("Train")}>Train</button>
 
-      <button onClick ={() => setPage("Calc")}>Calculate</button>
+      <button onClick ={() => setPage("Calc")}>Fare</button>
       </div>
   
       {page === "Home" && <HomePage />}
