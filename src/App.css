@@ -1,5 +1,7 @@
 body{
   margin:0;
+  max-width: 900px;
+  max-height: 900px;
 }
 
 .app{
@@ -12,18 +14,45 @@ body{
 .sideMenu{
  width:300px;
  display:flex;
+ flex:1;
  flex-direction: column;
  background-color: rgb(103, 216, 250);
 }
 
 .title{
   flex: 1;
-  width: 1196px;
+  width: 1284px;
   text-align: center;
   justify-content: center;
   background-color: rgb(103, 216, 250);
   padding: 20px;
 }
+
+img{
+  width:100%;
+  max-width:600px;
+  object-fit:cover;
+  vertical-align: middle;
+
+}
+
+.wrapper{
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-around;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+
+.info{
+  flex:1;
+  font-size: 20px;
+  margin: 5px;
+}
+
 
 .fare{
   flex: 1;
